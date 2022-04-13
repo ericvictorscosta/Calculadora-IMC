@@ -26,5 +26,7 @@ function calcular(){
         resultado = document.getElementById('resultado');
         resultado.innerHTML = 'Seu resultado foi: '+ imc.toFixed(2) + '<h3><br/>Acima do Peso!!</h3>';
         return false;
+    }else{
+        return false;
     }
 }
