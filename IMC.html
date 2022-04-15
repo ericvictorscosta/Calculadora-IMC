@@ -9,20 +9,23 @@
 </head>
 <body style="background-color: antiquewhite;">
 <div class="div_imc">
-    <form class="form_imc" method="POST" onsubmit="return calcular()">
+    <form class="form_imc" method="POST">
         <div id="point"></div>
+        <div><h3 style="font-size: 30px;margin: 0px 5vw 15px 0;">Calculadora <span id="span_IMC">IMC</span></h3></div>
         <div id="rr">
             <h3>Digite seu peso: </h3>
-            <input type="text" name="peso" id="peso">
+            <input type="text" name="peso" id="peso" placeholder="45Kg">
         </div>
         <div id="rr">
             <h3>Digite sua altura: </h3>
             <input type="text" name="altura" id="altura" placeholder="Exemplo: 1.90"><br>
         </div>
-        <div class="div_input"><input type="submit" value="Calcular IMC" id=""></div>
+        <div class="div_input" onsubmit="return calcular()"><input type="submit" value="Calcular IMC" id=""></div>
+
+        <div id="resultado"></div>
     </form>
 
-    <div id="resultado"></div>
+    
 </div>    
 </body>
 
